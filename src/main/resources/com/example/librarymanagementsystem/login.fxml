@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanagementsystem.AppController">
+   <left>
+       <AnchorPane prefHeight="600.0" prefWidth="283.0" style="-fx-background-color: #092C7F;" BorderPane.alignment="CENTER">
+           <Label alignment="CENTER" layoutX="33.0" layoutY="237.0" prefHeight="63.0" prefWidth="219.0" text="Library" textFill="#f6f8f8">
+              <font>
+                  <Font name="Times New Roman Bold Italic" size="27.0" />
+              </font>
+           </Label>
+           <Label alignment="CENTER" layoutX="11.0" layoutY="299.0" prefHeight="53.0" prefWidth="261.0" text="Management" textFill="#fdfeff">
+              <font>
+                  <Font name="Times New Roman Bold Italic" size="27.0" />
+              </font>
+           </Label>
+           <Line endX="100.0" layoutX="149.0" layoutY="300.0" startX="-112.0" stroke="#f8e8e8" strokeWidth="2.0">
+              <effect>
+                  <DropShadow />
+              </effect>
+           </Line>
+           <ImageView fitHeight="133.0" fitWidth="144.0" layoutX="82.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
+               <Image url="@bookshelf.png" />
+           </ImageView>
+       </AnchorPane>
+   </left>
+   <center>
+       <AnchorPane prefHeight="600.0" prefWidth="483.0" BorderPane.alignment="CENTER">
+           <Label alignment="CENTER" layoutX="76.0" layoutY="109.0" prefHeight="80.0" prefWidth="266.0" text="Login" textFill="#208a8a">
+              <font>
+                  <Font name="Impact" size="39.0" />
+              </font>
+           </Label>
+           <Label alignment="CENTER" contentDisplay="CENTER" layoutX="59.0" layoutY="217.0" prefHeight="41.0" prefWidth="88.0" text="Admin Id">
+              <font>
+                  <Font name="System Bold" size="16.0" />
+              </font>
+           </Label>
+           <Label alignment="CENTER" contentDisplay="CENTER" layoutX="59.0" layoutY="258.0" prefHeight="39.0" prefWidth="88.0" text="Password">
+              <font>
+                  <Font name="System Bold" size="16.0" />
+              </font>
+           </Label>
+           <TextField fx:id="aid" layoutX="147.0" layoutY="225.0" prefHeight="24.0" prefWidth="206.0" promptText="AdminId" />
+           <PasswordField fx:id="pass" layoutX="147.0" layoutY="265.0" prefHeight="22.0" prefWidth="207.0" promptText="Password" />
+           <Button fx:id="Linbutton" layoutX="84.0" layoutY="308.0" mnemonicParsing="false" onAction="#Linbutton" prefHeight="39.0" prefWidth="275.0" style="-fx-background-color: #360664; -fx-border-radius: 50px;" text="Login" textFill="#e8cece">
+              <font>
+                  <Font name="Calibri" size="18.0" />
+              </font>
+           </Button>
+           <Button fx:id="cancelButton" layoutX="84.0" layoutY="357.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="34.0" prefWidth="275.0" style="-fx-background-color: #360664;" text="Cancel" textFill="#e8cece">
+              <font>
+                  <Font name="Calibri" size="19.0" />
+              </font>
+           </Button>
+       </AnchorPane>
+   </center>
+</BorderPane>

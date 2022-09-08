@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanagementsystem.AppController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="205.0" style="-fx-background-color: #092C7F;" BorderPane.alignment="CENTER">
+         <Label alignment="CENTER" layoutX="48.0" layoutY="29.0" prefHeight="33.0" prefWidth="159.0" text="Admin Panel" textFill="#f5eeef">
+            <font>
+               <Font name="Tw Cen MT Condensed Extra Bold" size="28.0" />
+            </font>
+         </Label>
+         <Line endX="100.0" layoutX="106.0" layoutY="69.0" startX="-106.0" stroke="#a7a0c3" strokeWidth="2.0" />
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <AnchorPane layoutX="-1.0" prefHeight="39.0" prefWidth="495.0" style="-fx-background-color: #360664;">
+            <Button fx:id="logoutButton" alignment="CENTER" layoutX="430.0" layoutY="5.0" mnemonicParsing="false" onAction="#logoutButton" style="-fx-background-color: #360664;" text="Logout" textFill="#f8f3f3">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </AnchorPane>
+      </AnchorPane>
+   </center>
+</BorderPane>
