@@ -12,18 +12,24 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanagementsystem.AppController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanagementsystem.AppController">
    <left>
-       <AnchorPane prefHeight="600.0" prefWidth="283.0" style="-fx-background-color: #092C7F;" BorderPane.alignment="CENTER">
+       <AnchorPane prefHeight="500.0" prefWidth="276.0" style="-fx-background-color: #092C7F;" BorderPane.alignment="CENTER">
            <Label alignment="CENTER" layoutX="33.0" layoutY="237.0" prefHeight="63.0" prefWidth="219.0" text="Library" textFill="#f6f8f8">
               <font>
                   <Font name="Times New Roman Bold Italic" size="27.0" />
               </font>
+            <effect>
+               <DropShadow />
+            </effect>
            </Label>
            <Label alignment="CENTER" layoutX="11.0" layoutY="299.0" prefHeight="53.0" prefWidth="261.0" text="Management" textFill="#fdfeff">
               <font>
                   <Font name="Times New Roman Bold Italic" size="27.0" />
               </font>
+            <effect>
+               <DropShadow />
+            </effect>
            </Label>
            <Line endX="100.0" layoutX="149.0" layoutY="300.0" startX="-112.0" stroke="#f8e8e8" strokeWidth="2.0">
               <effect>
@@ -36,34 +42,54 @@
        </AnchorPane>
    </left>
    <center>
-       <AnchorPane prefHeight="600.0" prefWidth="483.0" BorderPane.alignment="CENTER">
-           <Label alignment="CENTER" layoutX="76.0" layoutY="109.0" prefHeight="80.0" prefWidth="266.0" text="Login" textFill="#208a8a">
+       <AnchorPane prefHeight="500.0" prefWidth="475.0" BorderPane.alignment="CENTER">
+           <Label alignment="CENTER" layoutX="135.0" layoutY="100.0" prefHeight="80.0" prefWidth="266.0" text="Login" textFill="#208a8a">
               <font>
                   <Font name="Impact" size="39.0" />
               </font>
+            <effect>
+               <DropShadow height="2.93" radius="1.085" width="3.41" />
+            </effect>
            </Label>
-           <Label alignment="CENTER" contentDisplay="CENTER" layoutX="59.0" layoutY="217.0" prefHeight="41.0" prefWidth="88.0" text="Admin Id">
+           <Label alignment="CENTER" contentDisplay="CENTER" layoutX="117.0" layoutY="210.0" prefHeight="41.0" prefWidth="88.0" text="Admin Id">
               <font>
                   <Font name="System Bold" size="16.0" />
               </font>
            </Label>
-           <Label alignment="CENTER" contentDisplay="CENTER" layoutX="59.0" layoutY="258.0" prefHeight="39.0" prefWidth="88.0" text="Password">
+           <Label alignment="CENTER" contentDisplay="CENTER" layoutX="117.0" layoutY="259.0" prefHeight="39.0" prefWidth="88.0" text="Password">
               <font>
                   <Font name="System Bold" size="16.0" />
               </font>
            </Label>
-           <TextField fx:id="aid" layoutX="147.0" layoutY="225.0" prefHeight="24.0" prefWidth="206.0" promptText="AdminId" />
-           <PasswordField fx:id="pass" layoutX="147.0" layoutY="265.0" prefHeight="22.0" prefWidth="207.0" promptText="Password" />
-           <Button fx:id="Linbutton" layoutX="84.0" layoutY="308.0" mnemonicParsing="false" onAction="#Linbutton" prefHeight="39.0" prefWidth="275.0" style="-fx-background-color: #360664; -fx-border-radius: 50px;" text="Login" textFill="#e8cece">
+           <TextField fx:id="aid" layoutX="205.0" layoutY="217.0" prefHeight="24.0" prefWidth="206.0" promptText="AdminId" style="-fx-border-color: #311b92; -fx-border-width: 0px 0px 2px 0px; -fx-background-color: transparent;" />
+           <PasswordField fx:id="pass" layoutX="205.0" layoutY="265.0" prefHeight="22.0" prefWidth="207.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-color: #311b92; -fx-border-width: 0px 0px 2px 0px;" />
+           <Button fx:id="Linbutton" layoutX="142.0" layoutY="316.0" mnemonicParsing="false" onAction="#Linbutton" prefHeight="39.0" prefWidth="275.0" style="-fx-background-color: #360664; -fx-background-radius: 30px;" text="Login" textFill="#e8cece">
               <font>
                   <Font name="Calibri" size="18.0" />
               </font>
            </Button>
-           <Button fx:id="cancelButton" layoutX="84.0" layoutY="357.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="34.0" prefWidth="275.0" style="-fx-background-color: #360664;" text="Cancel" textFill="#e8cece">
-              <font>
-                  <Font name="Calibri" size="19.0" />
-              </font>
-           </Button>
+         <Button fx:id="home" alignment="CENTER" layoutX="455.0" layoutY="8.0" mnemonicParsing="false" onAction="#home" style="-fx-background-color: #f1f8e9; -fx-border-color: #ab47bc; -fx-border-width: 0px 0px 1px 0px;" text="Home" textFill="#3887b2">
+            <font>
+               <Font name="SansSerif Bold" size="12.0" />
+            </font>
+         </Button>
+         <Button fx:id="signupbtn" layoutX="295.0" layoutY="414.0" mnemonicParsing="false" onAction="#signupbtn" prefHeight="23.0" prefWidth="92.0" style="-fx-background-color: trasparent; -fx-border-color: #00bfa5; -fx-border-width: 0px 0px 1px 0px;" text="Sign Up" textFill="#1a1a94">
+            <font>
+               <Font name="SansSerif Bold" size="14.0" />
+            </font>
+         </Button>
+         <Label layoutX="268.0" layoutY="380.0" prefHeight="25.0" prefWidth="23.0" text="or">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </Label>
+         <Label alignment="CENTER" layoutX="150.0" layoutY="416.0" prefHeight="34.0" prefWidth="151.0" text="Don't have an account?">
+            <font>
+               <Font name="Times New Roman Italic" size="14.0" />
+            </font>
+         </Label>
+         <Line endX="111.0" layoutX="150.0" layoutY="394.0" startX="-101.0" />
+         <Line endX="187.0" layoutX="304.0" layoutY="394.0" startX="-13.0" />
        </AnchorPane>
    </center>
 </BorderPane>
